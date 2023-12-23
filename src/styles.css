@@ -56,4 +56,7 @@ body {
     top: 55%;
     display: none;
 }
+#audio-container{
+    display: none;
+}
 
