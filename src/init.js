@@ -2,12 +2,12 @@ window.onload = function () {
 
     mapWidth = map[0].length;
     mapHeight = map.length;
-
     addKeys();
     initScreen();
-    initSprites()
+    initSprites();
     initEnemies();
     drawMap();
+    dragonMove();
     gameCycle();
     renderCycle();
 }
@@ -31,7 +31,6 @@ gameCycle = function () {
     var timeDelta = now - lastGameCycleTime;
 
     move(timeDelta);
-
     var cycleDelay = gameCycleDelay;
     if (timeDelta > cycleDelay) {
         cycleDelay = Math.max(1, cycleDelay - (timeDelta - cycleDelay))
@@ -48,7 +47,6 @@ renderCycle = function () {
     updateMap();
     clearSprites();
     castRays();
-    renderSprites();
     renderEnemies();
     updateBackground();
 
@@ -73,4 +71,22 @@ window.addEventListener("keyup", (e)=>{
 
     }
 })
+
+function dragonMove() {
+    const dragon = document.getElementById("dragon");   
+    dragon.animate(
+        [
+          { transform: 'scale(1)', top: "30%", left: "20%"},
+          { transform: 'scale(.7)' },
+          { transform: 'scale(.8)', top:"20%", left: "30%"},
+        ],
+        {
+          duration: 7500, // milliseconds
+          easing: 'ease-in-out', // 'linear', a bezier curve, etc. delay: 10, // milliseconds
+          iterations: Infinity, // or a number
+          direction: 'alternate', // 'normal', 'reverse', etc.
+        },
+      );
+  }
+
 
