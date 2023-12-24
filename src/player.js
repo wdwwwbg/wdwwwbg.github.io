@@ -200,27 +200,34 @@ addKeys = function () {
 
 //----------------------------------------------------------
 
-window.addEventListener("mouseover", (e)=>{
+window.addEventListener("click", (e)=>{
     if(e.target == document.getElementById('up-button')){
         player.vertical = 1
         playSounds()
     }
 })
 
-window.addEventListener("mouseover", (e)=>{
+window.addEventListener("click", (e)=>{
     if(e.target == document.getElementById('left-button')){
         player.direction = -1
     }
 })
-window.addEventListener("mouseover", (e)=>{
+window.addEventListener("click", (e)=>{
     if(e.target == document.getElementById('right-button')){
         player.direction = 1
     }
 })
-window.addEventListener("mouseover", (e)=>{
+window.addEventListener("click", (e)=>{
     if(e.target == document.getElementById('down-button')){
         player.vertical = -1
     }
+})
+window.addEventListener("click", (e)=>{
+    if(e.target == document.getElementById('space-bar',)){
+        document.getElementById('player').style.display = "none"
+        document.getElementById('shootup').style.display = "block"
+    }
+
 })
 window.addEventListener("mouseout", (e)=>{
     if(e.target == document.getElementById('down-button')){
@@ -245,13 +252,6 @@ window.addEventListener("mouseout", (e)=>{
         player.vertical = 0
         player.direction = 0
     }
-})
-window.addEventListener("mouseover", (e)=>{
-    if(e.target == document.getElementById('space-bar',)){
-        document.getElementById('player').style.display = "none"
-        document.getElementById('shootup').style.display = "block"
-    }
-
 })
 window.addEventListener("mouseout", (e)=>{
     if(e.target == document.getElementById('space-bar',)){

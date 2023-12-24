@@ -65,7 +65,7 @@ body {
     top: 7%;
     left: 65%;
     z-index: 99995;
-    display: none;
+    /* display: none; */
 }
 .button{
     height: 50px;
