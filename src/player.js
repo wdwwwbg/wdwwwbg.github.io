@@ -245,14 +245,14 @@ window.addEventListener("mouseup", (e)=>{
         player.direction = 0
     }
 })
-window.addEventListener("click", (e)=>{
+window.addEventListener("mousedown", (e)=>{
     if(e.target == document.getElementById('space-bar',)){
         document.getElementById('player').style.display = "none"
         document.getElementById('shootup').style.display = "block"
     }
 
 })
-window.addEventListener("mouseout", (e)=>{
+window.addEventListener("mouseup", (e)=>{
     const dragon1 = document.getElementById("dragon1")
     const dragon2 = document.getElementById("dragon2")
     const dragon3 = document.getElementById("dragon3")
