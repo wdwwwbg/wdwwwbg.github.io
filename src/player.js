@@ -206,17 +206,17 @@ window.addEventListener("click", (e)=>{
     }
 })
 
-window.addEventListener("mousedown", (e)=>{
+window.addEventListener("click", (e)=>{
     if(e.target == document.getElementById('left-button')){
         player.direction = -1
     }
 })
-window.addEventListener("mousedown", (e)=>{
+window.addEventListener("click", (e)=>{
     if(e.target == document.getElementById('right-button')){
         player.direction = 1
     }
 })
-window.addEventListener("mousedown", (e)=>{
+window.addEventListener("click", (e)=>{
     if(e.target == document.getElementById('down-button')){
         player.vertical = -1
     }
@@ -245,7 +245,7 @@ window.addEventListener("mouseup", (e)=>{
         player.direction = 0
     }
 })
-window.addEventListener("mousedown", (e)=>{
+window.addEventListener("click", (e)=>{
     
     if(e.target == document.getElementById('space-bar',)){
         document.getElementById('player').style.display = "none"
