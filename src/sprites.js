@@ -1,5 +1,5 @@
 initSprites = function () {
-    addItems();
+    // addItems();
     for (var i = 0; i < map.length; i++) {
         spritePosition[i] = [];
     }
@@ -33,23 +33,23 @@ var itemTypes = [
 
 //----------------------------------------------------------
 
-addItems = function () {
-    for (var y = 0; y < mapHeight; y++) {
-        for (var x = 0; x < mapWidth; x++) {
-            var wall = map[y][x];
+// addItems = function () {
+//     for (var y = 0; y < mapHeight; y++) {
+//         for (var x = 0; x < mapWidth; x++) {
+//             var wall = map[y][x];
 
-            if (wall == 0)
-                if (Math.random() * 100 < 2) {
-                    var item = {
-                        type: 0,
-                        x: x,
-                        y: y
-                    }
-                    mapSprites.push(item)
-                }
-        }
-    }
-}
+//             if (wall == 0)
+//                 if (Math.random() * 100 < 2) {
+//                     var item = {
+//                         type: 0,
+//                         x: x,
+//                         y: y
+//                     }
+//                     mapSprites.push(item)
+//                 }
+//         }
+//     }
+// }
 
 //----------------------------------------------------------
 
