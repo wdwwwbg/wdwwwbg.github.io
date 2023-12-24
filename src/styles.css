@@ -59,4 +59,14 @@ body {
 #audio-container{
     display: none;
 }
+.button-div{
+    position: absolute;
+    text-align: center;
+    top: 95%;
+    left: 89%;
+    z-index: 99995;
+}
+#space-bar{
+    width: 100%;
+}
 

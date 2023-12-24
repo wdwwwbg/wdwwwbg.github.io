@@ -199,3 +199,74 @@ addKeys = function () {
 }
 
 //----------------------------------------------------------
+
+window.addEventListener("mousedown", (e)=>{
+    if(e.target == document.getElementById('up-button')){
+        console.log('click')
+        player.vertical = 1
+    }
+})
+
+window.addEventListener("mousedown", (e)=>{
+    if(e.target == document.getElementById('left-button')){
+        player.direction = -1
+    }
+})
+window.addEventListener("mousedown", (e)=>{
+    if(e.target == document.getElementById('right-button')){
+        player.direction = 1
+    }
+})
+window.addEventListener("mousedown", (e)=>{
+    if(e.target == document.getElementById('down-button')){
+        player.vertical = -1
+    }
+})
+window.addEventListener("mouseup", (e)=>{
+    if(e.target == document.getElementById('down-button')){
+        player.vertical = 0
+        player.direction = 0
+    }
+})
+window.addEventListener("mouseup", (e)=>{
+    if(e.target == document.getElementById('up-button')){
+        player.vertical = 0
+        player.direction = 0
+    }
+})
+window.addEventListener("mouseup", (e)=>{
+    if(e.target == document.getElementById('left-button')){
+        player.vertical = 0
+        player.direction = 0
+    }
+})
+window.addEventListener("mouseup", (e)=>{
+    if(e.target == document.getElementById('right-button')){
+        player.vertical = 0
+        player.direction = 0
+    }
+})
+window.addEventListener("mousedown", (e)=>{
+    
+    if(e.target == document.getElementById('space-bar',)){
+        document.getElementById('player').style.display = "none"
+        document.getElementById('shootup').style.display = "block"
+    }
+})
+window.addEventListener("mouseup", (e)=>{
+    const dragon1 = document.getElementById("dragon1")
+    const dragon2 = document.getElementById("dragon2")
+    const dragon3 = document.getElementById("dragon3")
+    const dragon4 = document.getElementById("dragon4")
+    const dragon5 = document.getElementById("dragon5")
+    const audioFiles = [dragon1, dragon2, dragon3, dragon4, dragon5]
+    if(e.target == document.getElementById('space-bar',)){
+        document.getElementById('player').style.display = "block"
+        document.getElementById('shootup').style.display = "none"
+        audioFiles[Math.floor(Math.random() * 5)].play()
+        document.getElementById('music').play()
+        
+    }
+})
+
+
