@@ -200,9 +200,8 @@ addKeys = function () {
 
 //----------------------------------------------------------
 
-window.addEventListener("mousedown", (e)=>{
+window.addEventListener("click", (e)=>{
     if(e.target == document.getElementById('up-button')){
-        console.log('click')
         player.vertical = 1
     }
 })
