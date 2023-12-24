@@ -63,12 +63,12 @@ body {
     position: absolute;
     text-align: center;
     top: 7%;
-    left: 60%;
+    left: 65%;
     z-index: 99995;
 }
 .button{
     height: 50px;
-    width: 100px;
+    width: 75px;
 }
 #space-bar{
     width: 100%;
