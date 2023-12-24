@@ -60,8 +60,6 @@ window.addEventListener("keydown", (e)=>{
     if(e.code == "Space"){
         document.getElementById('player').style.display = "none"
         document.getElementById('shootup').style.display = "block"
-        console.log("pressed")
-
     }
 })
 window.addEventListener("keyup", (e)=>{

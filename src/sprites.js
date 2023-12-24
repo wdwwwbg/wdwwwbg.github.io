@@ -45,7 +45,7 @@ addItems = function () {
                         x: x,
                         y: y
                     }
-                    mapSprites.push(item)
+                    // mapSprites.push(item)
                 }
         }
     }
