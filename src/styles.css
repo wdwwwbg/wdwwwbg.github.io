@@ -65,6 +65,7 @@ body {
     top: 7%;
     left: 65%;
     z-index: 99995;
+    display: none;
 }
 .button{
     height: 50px;
@@ -73,4 +74,9 @@ body {
 #space-bar{
     width: 100%;
 }
+@media only screen and (max-width: 480px) {
+    .button-div{
+        display: block;
+    }
+  }
 
