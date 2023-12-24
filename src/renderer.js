@@ -36,7 +36,7 @@ function initScreen() {
 //----------------------------------------------------------
 
 var screenWidth = 1024;
-var screenHeight = 768;
+var screenHeight = 720;
 var screenStrips = [];
 var numoftex = 3;
 var stripWidth = 2;
